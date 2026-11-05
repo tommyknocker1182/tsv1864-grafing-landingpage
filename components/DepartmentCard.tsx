@@ -1,5 +1,6 @@
 
 import Image from "next/image";
+import { sitePath } from "@/lib/site-path";
 
 interface DepartmentCardProps {
   name: string;
@@ -23,7 +24,7 @@ if (featured) {
     >
       <div className="flex h-36 w-36 shrink-0 items-center justify-center rounded-2xl bg-white p-4 shadow-xl sm:h-44 sm:w-44">
         <Image
-          src="/images/tsv-wappen.jpg"
+          src={sitePath("/images/tsv-wappen.jpg")}
           alt="Wappen des TSV 1864 Grafing"
           width={160}
           height={160}
@@ -64,7 +65,7 @@ if (featured) {
 }`}
 >
       <Image
-        src={image}
+        src={sitePath(image)}
         alt={`Sportabteilung ${name}`}
         fill
         unoptimized

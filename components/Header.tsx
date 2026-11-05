@@ -3,6 +3,8 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { sitePath } from "@/lib/site-path";
+
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -38,12 +40,12 @@ export default function Header() {
         }`}
       >
         <a
-          href="/"
+          href={sitePath("/")}
           className="flex shrink-0 items-center gap-3 py-2"
         >
           <div className="flex h-[68px] w-[68px] shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white shadow-md ring-1 ring-black/5">
             <Image
-              src="/images/tsv-wappen.jpg"
+              src={sitePath("/images/tsv-wappen.jpg")}
               alt="Wappen TSV 1864 Grafing"
               width={56}
               height={56}
