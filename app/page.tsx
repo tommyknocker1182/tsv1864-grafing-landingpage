@@ -64,7 +64,7 @@ const departments = [
   {
     name: "TSV Garde",
     image: "/images/abteilungen/garde.jpg",
-    href: "https://www.tsv-grafing-hauptverein.de",
+    href: "https://www.tsv-grafing-hauptverein.de/TSV-Garde.htm",
   },
   {
     name: "Volleyball",
