@@ -1,4 +1,4 @@
-
+import { sitePath } from "@/lib/site-path";
 export default function Footer() {
   return (
     <footer className="border-t border-white/10 bg-[#0A0A0A]">
@@ -14,14 +14,14 @@ export default function Footer() {
 
         <div className="flex flex-wrap items-center justify-center gap-6 text-sm">
           <a
-            href="/impressum"
+            href={sitePath("/impressum/")}
             className="text-[#A1A1AA] transition-colors hover:text-[#FFD100]"
           >
             Impressum
           </a>
 
           <a
-            href="/datenschutz"
+            href={sitePath("/datenschutz/")}
             className="text-[#A1A1AA] transition-colors hover:text-[#FFD100]"
           >
             Datenschutz
